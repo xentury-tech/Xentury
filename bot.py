@@ -333,6 +333,10 @@ async def mute(interaction: discord.Interaction, usuario: discord.Member, tiempo
     await timeout(interaction, usuario, tiempo)
 
 # Ejecutar el bot
+[span_0](start_span)import os[span_0](end_span)
+
+# Al final de tu archivo, donde arrancas el bot
 if __name__ == "__main__":
-    TOKEN = "MTQ5MDEyMTE2MTM0MDc1MjEwMg.GA5jcM.BWBl5PhAvUa0kGSIkhFdUF6FeeW3SwcCZkGDJo"  # Reemplaza con tu token
+    [span_1](start_span)TOKEN = os.getenv("DISCORD_TOKEN") # Esto busca la variable en Railway[span_1](end_span)
     bot.run(TOKEN)
+
