@@ -34,7 +34,7 @@ async def on_ready():
     
     # Estado personalizado con streaming
     await bot.change_presence(activity=discord.Streaming(
-        name="Xentury - https://xentury.xyz",
+        name="Aqirax On Top",
         url="https://www.twitch.tv/xentury_oficial"
     ))
 
